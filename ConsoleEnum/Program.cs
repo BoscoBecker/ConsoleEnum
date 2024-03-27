@@ -6,12 +6,13 @@ namespace ConsoleEnum {
     
         static  void Main(string[] args)
         {
-            Order order = new Order();
-            order.Id = 1;
-            order.Moment = DateTime.Now;
-            order.Status = OrderStatus.Delivered;
+            Order order = new Order
+            {
+                Id = 1,
+                Moment = DateTime.Now,
+                Status = OrderStatus.Delivered
+            };
             Console.WriteLine("Order " + order);
-
         }
     }
 }
