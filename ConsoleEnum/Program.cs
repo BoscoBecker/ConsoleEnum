@@ -12,7 +12,9 @@ namespace ConsoleEnum {
                 Moment = DateTime.Now,
                 Status = OrderStatus.Delivered
             };
-            Console.WriteLine("Order " + order);
+            OrderStatus status = Enum.Parse<OrderStatus>("Delivered");
+            Console.WriteLine("Order " + OrderStatus.PendingPayment.ToString());
+            Console.WriteLine(status);
         }
     }
 }
